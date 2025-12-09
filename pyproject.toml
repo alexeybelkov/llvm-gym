@@ -9,4 +9,12 @@ dependencies = [
     "ipykernel>=7.1.0",
     "ipython>=9.8.0",
     "jupyter>=1.1.1",
+    "numpy>=2.3.5",
 ]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages.find = { include = ["llvm_gym"] }
